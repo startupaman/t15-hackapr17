@@ -1,0 +1,75 @@
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="row">
+                                <div class="col s12">
+                                    <h5>Select Criteria</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s4">
+                                    <select class="browser-default" ng-model="analytics.selectedLocation.area" ng-change="setValue(analytics.selectedLocation)" ng-options="area.name for area in areas">
+                                        <option value="" title="Select Area" selected disabled>Select your Area</option>
+                                    </select>
+                                </div>
+                                <div class="col s4">
+                                    <select class="browser-default" ng-model="analytics.selectedLocation.locality" ng-change="setValue(analytics.selectedLocation)" ng-options="locality.name for locality in localities">
+                                        <option value="" title="Select Locality" selected disabled>Select your Locality</option>
+                                    </select>
+                                </div>
+                                <div class="col s4">
+                                    <select class="browser-default" ng-model="analytics.selectedLocation.street" ng-change="setValue(analytics.selectedLocation)" ng-options="street.name for street in streets">
+                                        <option value="" title="Select Street" selected disabled>Select your Street</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col s6">
+                                    <select class="browser-default" ng-model="analytics.selectedLocation.zone" ng-change="setValue(analytics.selectedLocation)" ng-options="zone.name for zone in zones">
+                                        <option value="" title="Select Zone" selected disabled>Select your Zone</option>
+                                    </select>
+                                </div>
+                                <div class="col s6">
+                                    <select class="browser-default" ng-model="analytics.selectedLocation.ward" ng-change="setValue(analytics.selectedLocation)" ng-options="ward.name for ward in wards">
+                                        <option value="" title="Select Ward" selected disabled>Select your Ward</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <div class="row">
+                <div class="col s12">
+                    <ul class="tabs" ng-init="tabsReady()">
+                        <li class="tab col s4"><a class="active" href="#one">Case 1</a></li>
+                        <li class="tab col s4"><a href="#two">Case 2</a></li>
+                        <li class="tab col s4"><a href="#three">Case 3</a></li>
+                    </ul>
+                </div>
+                <div id="one" class="col s12">
+                    <case-one></case-one>
+                </div>
+                <div id="two" class="col s12">
+                    <case-two></case-two>
+                </div>
+                <div id="three" class="col s12">
+                    <case-three></case-three>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
