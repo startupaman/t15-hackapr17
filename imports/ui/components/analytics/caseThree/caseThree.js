@@ -19,11 +19,15 @@ class CaseThree {
         this.q = $q;
         this.scope = $scope;
 
-        this.helpers({});
-    }
+        $timeout(function() {
+            $scope.labels = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+            $scope.series = ['Series A'];
+            $scope.data = [
+                [65, 59, 80, 81, 56, 55, 40, 100, 20, 200]
+            ];
+        });
 
-    startProcessing() {
-        console.log(Session.get("selectedValue"));
+        this.helpers({});
     }
 }
 

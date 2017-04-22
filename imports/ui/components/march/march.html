@@ -9,6 +9,11 @@
                 <a style="color: white" href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons" style="font-size: 24px">menu</i></a>
                 <!--for large devices only-->
                 <ul class="right hide-on-med-and-down">
+                    <li ng-class="{'active':isActive('march.analytics')}" ng-click="setActive('march.analytics'); march.goToState('march.analytics')">
+                        <a style="color: white">Analytics</a>
+                    </li>
+                </ul>
+                <ul class="right hide-on-med-and-down">
                     <li ng-class="{'active':isActive('march.home')}" ng-click="setActive('march.home');  march.goToState('march.home')">
                         <a style="color: white">Home</a>
                     </li>
@@ -26,6 +31,9 @@
                     </li>
                     <li ng-class="{'active':isActive('march.home')}" ng-click="march.goToState('march.home')">
                         <a style="color: #0277bd">Home</a>
+                    </li>
+                    <li ng-class="{'active':isActive('march.analytics')}" ng-click="march.goToState('march.analytics')">
+                        <a style="color: #0277bd">Analytics</a>
                     </li>
                 </ul>
             </div>

@@ -8,6 +8,9 @@ import template from './caseTwo.html';
 import {
     Meteor
 } from 'meteor/meteor';
+import {
+    Results
+} from '../../../../api/results';
 
 class CaseTwo {
     constructor($scope, $rootScope, $reactive, $timeout, $q) {
@@ -19,11 +22,23 @@ class CaseTwo {
         this.q = $q;
         this.scope = $scope;
 
-        this.helpers({});
-    }
+        $timeout(function() {
+            $scope.labels = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+            $scope.series = ['Series A'];
+        });
 
-    startProcessing() {
-        console.log(Session.get("selectedValue"));
+        this.helpers({
+            chartData() {
+                const result = Results.find({}, {
+                    limit: 1
+                }).fetch();
+
+                if (result[0]) {
+                    console.log(result);
+                    return result[0].guidanceArray;
+                }
+            }
+        });
     }
 }
 

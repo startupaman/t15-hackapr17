@@ -95,15 +95,12 @@ class March {
         $timeout = this.timeout;
         $scope = this.scope;
         $rootScope = this.rootScope;
+
         if (state != 'info') {
             $scope.setActive(state);
         }
 
-        console.log("march goToState " + state);
-        console.log("march goToState " + $rootScope.currentState);
-
         if (!(state == $rootScope.currentState)) {
-            console.log("march goToState inside if");;
             Session.set('loadingOn', true);
         }
 

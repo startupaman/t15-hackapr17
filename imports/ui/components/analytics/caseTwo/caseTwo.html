@@ -6,12 +6,11 @@
                     <div class="card-content">
                         <div class="row">
                             <div class="col s12">
-                                <h5>Case 2</h5>
+                                <h5>Whether Demographics Influence Grievance Redressal</h5>
                             </div>
                         </div>
-                        <div class="row center">
-                            <a class="modal-action waves-effect waves-light btn" ng-click="caseTwo.startProcessing()">Start</a>
-                        </div>
+                        <canvas id="line" class="chart chart-line" chart-data="caseTwo.chartData" chart-labels="labels" chart-series="series" chart-options="options" chart-dataset-override="datasetOverride" chart-click="onClick">
+                        </canvas>
                     </div>
                 </div>
             </div>

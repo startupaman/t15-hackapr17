@@ -1,89 +1,11 @@
 zone,ward,area,locality,street,usage,value
-N01,N004,Perambur,Perambur,THULASINGAM 2ST STREET,Non-Residential,3
-N01,N004,Perambur,Perambur,THULASINGAM 2ST STREET,Residential,0.8
-N04,N034,Kodungaiyur,Amutham Nagar,Amutham Nagar 1st Street,Non-Residential,3
-N04,N034,Kodungaiyur,Amutham Nagar,Amutham Nagar 1st Street,Residential,0.5
-N04,N034,Kodungaiyur,Amutham Nagar,Amutham Nagar 2nd Street,Non-Residential,3
-N04,N034,Kodungaiyur,Amutham Nagar,Amutham Nagar 2nd Street,Residential,0.5
-N04,N034,Kodungaiyur,Amutham Nagar,Amutham Nagar 3rd Street,Non-Residential,3
-N04,N034,Kodungaiyur,Amutham Nagar,Amutham Nagar 3rd Street,Residential,0.5
-N04,N034,Kodungaiyur,Amutham Nagar,Amutham Nagar 4th Street,Non-Residential,3
-N04,N034,Kodungaiyur,Amutham Nagar,Amutham Nagar 4th Street,Residential,0.5
-N04,N034,Kodungaiyur,Amutham Nagar,Amutham Nagar 5th Street,Non-Residential,3
-N04,N034,Kodungaiyur,Amutham Nagar,Amutham Nagar 5th Street,Residential,0.5
-N04,N034,Kodungaiyur,Amutham Nagar,Amutham Nagar 6th Street,Non-Residential,3
-N04,N034,Kodungaiyur,Amutham Nagar,Amutham Nagar 6th Street,Residential,0.5
-N04,N034,Kodungaiyur,Amutham Nagar,Amutham Nagar 7th Street,Non-Residential,3
-N04,N034,Kodungaiyur,Amutham Nagar,Amutham Nagar 7th Street,Residential,0.5
-N04,N034,Kodungaiyur,Annai Velankanni Nagar,Annai Velankani Nagar 1st Street,Non-Residential,3
-N04,N034,Kodungaiyur,Annai Velankanni Nagar,Annai Velankani Nagar 1st Street,Residential,0.5
-N04,N034,Kodungaiyur,Annai Velankanni Nagar,Annai Velankani Nagar 2nd Street,Non-Residential,3
-N04,N034,Kodungaiyur,Annai Velankanni Nagar,Annai Velankani Nagar 2nd Street,Residential,0.5
-N04,N034,Kodungaiyur,Badri Nagar,Badri Nagar 1st Street,Non-Residential,3
-N04,N034,Kodungaiyur,Badri Nagar,Badri Nagar 1st Street,Residential,0.5
-N04,N034,Kodungaiyur,Binny Nagar,Binny Nagar 1st Street,Non-Residential,3
-N04,N034,Kodungaiyur,Binny Nagar,Binny Nagar 1st Street,Residential,0.5
-N04,N034,Kodungaiyur,Binny Nagar,Binny Nagar Main Road,Non-Residential,3
-N04,N034,Kodungaiyur,Binny Nagar,Binny Nagar Main Road,Residential,0.5
-N04,N034,Kodungaiyur,Binny Nagar,Boopathy Naicken Main Road,Non-Residential,3
-N04,N034,Kodungaiyur,Binny Nagar,Boopathy Naicken Main Road,Residential,0.5
-N04,N034,Kodungaiyur,Cauvery Nagar,Cauvery Nagar  2nd Street,Non-Residential,3
-N04,N034,Kodungaiyur,Cauvery Nagar,Cauvery Nagar  2nd Street,Residential,0.5
-N04,N034,Kodungaiyur,Cauvery Nagar,Cauvery Nagar 1st Street,Non-Residential,3
-N04,N034,Kodungaiyur,Cauvery Nagar,Cauvery Nagar 1st Street,Residential,0.5
-N04,N034,Kodungaiyur,Cauvery Nagar,Cauvery Nagar 3rd Street,Non-Residential,3
-N04,N034,Kodungaiyur,Cauvery Nagar,Cauvery Nagar 3rd Street,Residential,0.5
-N04,N034,Kodungaiyur,Cauvery Nagar,Cauvery Nagar 4th Street,Non-Residential,3
-N04,N034,Kodungaiyur,Cauvery Nagar,Cauvery Nagar 4th Street,Residential,0.5
-N04,N034,Kodungaiyur,Cauvery Nagar,Cauvery Nagar 5th Street,Non-Residential,3
-N04,N034,Kodungaiyur,Cauvery Nagar,Cauvery Nagar 5th Street,Residential,0.5
-N04,N034,Kodungaiyur,Cauvery Nagar,Cauvery Nagar 6th Street,Non-Residential,3
-N04,N034,Kodungaiyur,Cauvery Nagar,Cauvery Nagar 6th Street,Residential,0.5
-N04,N034,Kodungaiyur,Cauvery Nagar,Cauvery Nagar Main Road,Non-Residential,3
-N04,N034,Kodungaiyur,Cauvery Nagar,Cauvery Nagar Main Road,Residential,0.5
-N04,N034,Kodungaiyur,Chinna Kodungaiyur,Chinna Kodungaiyur Road,Non-Residential,3
-N04,N034,Kodungaiyur,Chinna Kodungaiyur,Chinna Kodungaiyur Road,Residential,0.5
-N04,N034,Kodungaiyur,Chinna Kodungaiyur,Manali Salai,Non-Residential,3
-N04,N034,Kodungaiyur,Chinna Kodungaiyur,Manali Salai,Residential,0.5
-N04,N034,Kodungaiyur,Chinnandimadam,Kadumapdi Amman Koil 2nd Cross Street,Non-Residential,3
-N04,N034,Kodungaiyur,Chinnandimadam,Kadumapdi Amman Koil 2nd Cross Street,Residential,0.5
-N04,N034,Kodungaiyur,Chinnandimadam,Kadumapdi Amman Koil 3rd Cross Street,Non-Residential,3
-N04,N034,Kodungaiyur,Chinnandimadam,Kadumapdi Amman Koil 3rd Cross Street,Residential,0.5
-N04,N034,Kodungaiyur,Chinnandimadam,Kadumpadi Amman Koil 1st Cross Street,Non-Residential,3
-N04,N034,Kodungaiyur,Chinnandimadam,Kadumpadi Amman Koil 1st Cross Street,Residential,0.5
-N04,N034,Kodungaiyur,Chinnandimadam,Kadumpadi Amman Koil Street,Non-Residential,3
-N04,N034,Kodungaiyur,Chinnandimadam,Kadumpadi Amman Koil Street,Residential,0.5
-N04,N034,Kodungaiyur,Chinnandimadam,Kadumpadiamman Koil 1st Street,Non-Residential,3
-N04,N034,Kodungaiyur,Chinnandimadam,Kadumpadiamman Koil 1st Street,Residential,0.5
-N04,N034,Kodungaiyur,Chinnandimadam,Kadumpadiamman Koil 2nd Street,Non-Residential,3
-N04,N034,Kodungaiyur,Chinnandimadam,Kadumpadiamman Koil 2nd Street,Residential,0.5
-N04,N034,Kodungaiyur,Chinnandimadam,Solai Amman Koil 1st Cross Street,Non-Residential,3
-N04,N034,Kodungaiyur,Chinnandimadam,Solai Amman Koil 1st Cross Street,Residential,0.5
-N04,N034,Kodungaiyur,Chinnandimadam,Solai Amman Koil 2nd Cross Street,Non-Residential,3
-N04,N034,Kodungaiyur,Chinnandimadam,Solai Amman Koil 2nd Cross Street,Residential,0.5
-N04,N034,Kodungaiyur,Chinnandimadam,Solai Amman Koil 3rd Cross Street,Non-Residential,3
-N04,N034,Kodungaiyur,Chinnandimadam,Solai Amman Koil 3rd Cross Street,Residential,0.5
-N04,N034,Kodungaiyur,Chinnandimadam,Solai Amman Koil 4th Cross Street,Non-Residential,3
-N04,N034,Kodungaiyur,Chinnandimadam,Solai Amman Koil 4th Cross Street,Residential,0.5
-N04,N034,Kodungaiyur,Chinnandimadam,Solai Amman Koil 5th Cross Street,Non-Residential,3
-N04,N034,Kodungaiyur,Chinnandimadam,Solai Amman Koil 5th Cross Street,Residential,0.5
-N04,N034,Kodungaiyur,Chinnandimadam,Solai Amman Koil Main Road,Non-Residential,3
-N04,N034,Kodungaiyur,Chinnandimadam,Solai Amman Koil Main Road,Residential,0.5
-N04,N034,Kodungaiyur,Devi Karumari Amman Nagar,Devikarumariamman Nagar 1st Cross Street,Non-Residential,3
-N04,N034,Kodungaiyur,Devi Karumari Amman Nagar,Devikarumariamman Nagar 1st Cross Street,Residential,0.5
-N04,N034,Kodungaiyur,Devi Karumari Amman Nagar,Devikarumariamman Nagar 2nd Cross Street,Non-Residential,3
-N04,N034,Kodungaiyur,Devi Karumari Amman Nagar,Devikarumariamman Nagar 2nd Cross Street,Residential,0.5
-N04,N034,Kodungaiyur,Devi Karumari Amman Nagar,Devikarumariamman Nagar 3rd Cross Street,Non-Residential,3
-N04,N034,Kodungaiyur,Devi Karumari Amman Nagar,Devikarumariamman Nagar 3rd Cross Street,Residential,0.5
-N04,N034,Kodungaiyur,Devi Karumari Amman Nagar,Devikarumariamman Nagar Main Road,Non-Residential,3
-N04,N034,Kodungaiyur,Devi Karumari Amman Nagar,Devikarumariamman Nagar Main Road,Residential,0.5
-N04,N034,Kodungaiyur,Ganesh Nagar,Ganesh Nagar 1st Street,Non-Residential,3
-N04,N034,Kodungaiyur,Ganesh Nagar,Ganesh Nagar 1st Street,Residential,0.5
-N04,N034,Kodungaiyur,Ganesh Nagar,Ganesh Nagar 2nd Street,Non-Residential,3
-N04,N034,Kodungaiyur,Ganesh Nagar,Ganesh Nagar 2nd Street,Residential,0.5
-N04,N034,Kodungaiyur,Ganesh Nagar,Ganesh Nagar 3rd Street,Non-Residential,3
-N04,N034,Kodungaiyur,Ganesh Nagar,Ganesh Nagar 3rd Street,Residential,0.5
-N04,N034,Kodungaiyur,Ganesh Nagar,Ganesh Nagar 4th Street,Non-Residential,3
-N04,N034,Kodungaiyur,Ganesh Nagar,Ganesh Nagar 4th Street,Residential,0.5
-N04,N034,Kodungaiyur,Ganesh Nagar,Ganesh Nagar 5th Street,Non-Residential,3
-N04,N034,Kodungaiyur,Ganesh Nagar,Ganesh Nagar 5th Street,Residential,0.5
+N09,N113,T.Nagar,T.Nagar,Vidyodaya Ii Cross Street,Non-Residential,4.5
+N09,N113,T.Nagar,T.Nagar,Vidyodaya Ii Cross Street,Residential,1.25
+N05,N059,Central,Central,V P Hall Compounds,Non-Residential,4.8
+N05,N059,Central,Central,V P Hall Compounds,Residential,0.8
+N08,N100,Anna Nagar,Y Block,Y Block 3rd Street,Non-Residential,6
+N08,N100,Anna Nagar,Y Block,Y Block 3rd Street,Residential,1.25
+N10,N139,Jafferkhanpet,Jafferkhanpet,S.V.Chidambaram Salai,Non-Residential,3
+N10,N139,Jafferkhanpet,Jafferkhanpet,S.V.Chidambaram Salai,Residential,0.75
+N11,N149,Virugambakkam,Alwarthirunagar Annexe,School View Street 2 - Alwarthirunagar Annexe,Non-Residential,3
+N11,N149,Virugambakkam,Alwarthirunagar Annexe,School View Street 2 - Alwarthirunagar Annexe,Residential,0.8

@@ -1,13 +1,16 @@
+import csvToJson from 'csvtojson';
 import {
     Meteor
 } from 'meteor/meteor';
-import csvToJson from 'csvtojson';
 import {
     Complaints
 } from '../../imports/api/complaints';
 import {
     Guidances
 } from '../../imports/api/guidances';
+import {
+    Masters
+} from '../../imports/api/masters';
 import {
     Areas
 } from '../../imports/api/areas';
@@ -26,17 +29,30 @@ import {
 import {
     Types
 } from '../../imports/api/types';
+import async from 'async';
+import series from 'async/series';
 
 Meteor.methods({
     loadCSVData: function(complaintCSVPath, guidanceCSVPath) {
-        console.log("Start CSV Loading...");
-        var complaintCSVPath = "/home/monty/Project/egovernance-hackathon/web-app/public/data/test-complaint.csv";
-        var guidanceCSVPath = "/home/monty/Project/egovernance-hackathon/web-app/public/data/test-guidance.csv";
 
         Future = Npm.require('fibers/future');
         var future = new Future();
 
-        const csv = require("csvtojson")
+        // console.log("Removing Old Data...");
+        // Areas.remove({});
+        // Localities.remove({});
+        // Streets.remove({});
+        // Zones.remove({});
+        // Wards.remove({});
+        // Types.remove({});
+        // Complaints.remove({});
+        // Guidances.remove({});
+        // Masters.remove({});
+        // console.log("Old Data Removed");
+
+        console.log("Start CSV Loading...");
+
+        const csv = require("csvtojson");
 
         csv()
             .fromFile(complaintCSVPath)
@@ -123,51 +139,55 @@ Meteor.methods({
                             startDate: row.startDate,
                             completionDate: row.completionDate,
                             time: row.time,
-                            isRedressed: row.isRedressed
+                            isRedressed: row.isRedressed,
+                            masterId: area._id + "-" + locality._id + "-" + street._id + "-" + zone._id + "-" + ward._id
                         })
                     })).on('done', Meteor.bindEnvironment(function(error) {
                         console.log("Complaint CSV File Read: Complaint");
-                        future.return(true);
+
+                        csv()
+                            .fromFile(guidanceCSVPath)
+                            .on('json', Meteor.bindEnvironment(function(row, index) {
+                                console.log("Processing Row Number: " + index);
+
+                                const area = Areas.findOne({
+                                    name: row.area
+                                });
+
+                                const locality = Localities.findOne({
+                                    name: row.locality
+                                });
+
+                                const street = Streets.findOne({
+                                    name: row.street
+                                });
+
+                                const zone = Zones.findOne({
+                                    name: row.zone
+                                });
+
+                                const ward = Wards.findOne({
+                                    name: row.ward
+                                });
+
+                                Guidances.insert({
+                                    areaId: area == undefined ? "" : area._id,
+                                    localityId: locality == undefined ? "" : locality._id,
+                                    streetId: street == undefined ? "" : street._id,
+                                    zoneId: zone == undefined ? "" : zone._id,
+                                    wardId: ward == undefined ? "" : ward._id,
+                                    usage: row.usage,
+                                    value: row.value,
+                                    masterId: area._id + "-" + locality._id + "-" + street._id + "-" + zone._id + "-" + ward._id
+                                })
+                            })).on('done', Meteor.bindEnvironment(function(error) {
+
+                                console.log("Guidance CSV File Read: Guidance");
+
+                                future.return(true);
+                            }));
                     }));
-
-                csv()
-                    .fromFile(guidanceCSVPath)
-                    .on('json', Meteor.bindEnvironment(function(row, index) {
-                        console.log("Processing Row Number: " + index);
-
-                        const area = Areas.findOne({
-                            name: row.area
-                        });
-
-                        const locality = Localities.findOne({
-                            name: row.locality
-                        });
-
-                        const street = Streets.findOne({
-                            name: row.street
-                        });
-
-                        const zone = Zones.findOne({
-                            name: row.zone
-                        });
-
-                        const ward = Wards.findOne({
-                            name: row.ward
-                        });
-
-                        Guidances.insert({
-                            areaId: area == undefined ? "" : area._id,
-                            localityId: locality == undefined ? "" : locality._id,
-                            streetId: street == undefined ? "" : street._id,
-                            zoneId: zone == undefined ? "" : zone._id,
-                            wardId: ward == undefined ? "" : ward._id,
-                            usage: row.usage,
-                            value: row.value
-                        })
-                    })).on('done', Meteor.bindEnvironment(function(error) {
-                        console.log("Guidance CSV File Read: Guidance");
-                    }));
-            }))
+            }));
 
         return future.wait();
     }

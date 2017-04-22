@@ -1,7 +1,6 @@
 import {
     Meteor
 } from 'meteor/meteor';
-import csvToJson from 'csvtojson';
 import {
     Complaints
 } from '../../imports/api/complaints';
@@ -9,39 +8,28 @@ import {
     Guidances
 } from '../../imports/api/guidances';
 import {
-    Areas
-} from '../../imports/api/areas';
-import {
-    Localities
-} from '../../imports/api/localities';
-import {
-    Streets
-} from '../../imports/api/streets';
-import {
-    Zones
-} from '../../imports/api/zones';
-import {
-    Wards
-} from '../../imports/api/wards';
-import {
-    Types
-} from '../../imports/api/types';
-import {
     Masters
-} from '../../imports/api/masters'
+} from '../../imports/api/masters';
 
 Meteor.methods({
-    insertMaster: function() {
-        console.log("start insertMaster");
+    createMaster: function() {
+
+        console.log("Creating Master...");
+
+        Future = Npm.require('fibers/future');
+        var future = new Future();
+
         Complaints.aggregate([{
             $lookup: {
                 from: "guidances",
-                localField: "masterColumn",
-                foreignField: "masterColumn",
-                as: "master_docs"
+                localField: "masterId",
+                foreignField: "masterId",
+                as: "masterColumn"
             }
-        }]).forEach(function(object) {
-            if (object.master_docs.length == 2) {
+        }]).forEach(function(object, index, array) {
+            console.log("Processing Row Number: " + index);
+
+            if (object.masterColumn.length == 2) {
                 Masters.insert({
                     "_id": object._id,
                     "number": object.number,
@@ -55,12 +43,18 @@ Meteor.methods({
                     "completionDate": object.completionDate,
                     "time": object.time,
                     "isRedressed": object.isRedressed,
-                    "masterColumn": object.masterColumn,
-                    'residentialValue': object.master_docs[0].value,
-                    'nonResidentialValue': object.master_docs[1].value
+                    "masterId": object.masterId,
+                    'residentialValue': object.masterColumn[0].value,
+                    'nonResidentialValue': object.masterColumn[1].value
                 })
             }
 
-        })
+            if (index == array.length - 1) {
+                console.log("Index Limit Reached");
+                future.return(true);
+            }
+        });
+
+        return future.wait();
     }
 });

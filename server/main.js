@@ -7,3 +7,4 @@ import '../imports/api/types';
 import '../imports/api/localities';
 import '../imports/api/wards';
 import '../imports/api/masters';
+import '../imports/api/results';

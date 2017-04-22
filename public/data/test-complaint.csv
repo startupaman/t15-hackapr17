@@ -1,51 +1,6 @@
-number,complaint,area,locality,street,zone,ward,startDate,completionDate,time,isRedressed
+number,type,area,locality,street,zone,ward,startDate,completionDate,time,isRedressed
 1,Unauthorised / Illegal construction,T.Nagar,T.Nagar,Vidyodaya Ii Cross Street,N09,N113,05-30-2010 18:12:42,,,NO
-2,Request to relay the Road,Central,Central,V P Hall Compounds,N05,N059,08/06/10 14:54,,,NO
-3,Shifting of Street light Pole,Greater Chennai Corporation,Sastri Nagar,Sastri Nagar,N13,N175,09-18-2010 19:56:04,,,NO
-4,Removal of garbage,Greater Chennai Corporation,Otteri,Otteri,N06,N071,10/04/10 07:59,,,NO
-5,Encroachment on the public property,Anna Nagar,Y Block,Y Block 3rd Street,N08,N100,10/06/10 10:29,,,NO
-6,Request to relay the Road,Jafferkhanpet,Jafferkhanpet,S.V.Chidambaram Salai,N10,N139,10/07/10 14:43,,,NO
-7,Formation of New Road,Greater Chennai Corporation,Choolaimedu,Choolaimedu,N09,N109,10-15-2010 06:02:17,,,NO
-8,Slow progress of work,Greater Chennai Corporation,Korukkupet,Cornation  Nagar,N04,N038,10-15-2010 11:22:43,,,NO
-9,Complaints regarding Centre Median,Virugambakkam,Alwarthirunagar Annexe,School View Street 2 - Alwarthirunagar Annexe,N11,N149,10-18-2010 17:07:05,,,NO
-10,"Inclusion, delection of correction in the Voter list",Nungambakkam,Valluvar Kottam,Valluvar Kottam High Road,N09,N112,10-27-2010 11:25:11,,,NO
-11,Removal of garbage,Greater Chennai Corporation,Mandavelipakkam,Mandavelipakkam,N09,N126,11/12/10 09:33,,,NO
-12,Slow progress of work,Vyasarpadi,M.K.B. Nagar,Mullai Complex,N04,N037,11-27-2010 22:31:41,,,NO
-13,Slow progress of work,Triplicane,Triplicane,Kamarajar Salai,N09,N116,11-28-2010 13:49:21,,,NO
-14,Complaints related to property tax ,Virugambakkam,Virugambakkam,Thangal Street,N10,N128,12/06/10 19:05,,,NO
-15,Request to relay the Road,Pudupet,Pudupet,Athithanar (Harris) Road,N05,N061,12/11/10 16:25,,,NO
-16,Slow progress of work,Abiramapuram,Abiramapuram,Abiramapuram 1st Street,N09,N123,12-15-2010 16:02:21,,,NO
-17,Stagnation of water,Chetpet,Mangalapuram,Mangalapuram 14th Street,N06,N064,12-18-2010 14:31:59,,,NO
-18,Request to relay the Road,Greater Chennai Corporation,Teynampet,Teynampet,N09,N122,12-21-2010 11:23:30,,,NO
-19,Violation of DCR/Building bye laws,Greater Chennai Corporation,Abiramapuram,Abiramapuram,N09,N123,12-21-2010 12:42:38,,,NO
-20,Building plan sanction,Alwarpet,Alwarpet,C.P. Ramasami Road,N09,N123,12-26-2010 18:26:47,,,NO
-21,Repairs to the SWD,Virugambakkam,Venkatesh Nagar,Vishnu Avenue - Venkatesh Nagar,N10,N127,12-29-2010 11:17:24,,,NO
-22,Slow progress of work,Royapettah,Royapettah,Thandavarayan Street,N09,N116,01/04/11 11:09,,,NO
-23,Parking Issue,Royapettah,Royapettah,Whites Road,N09,N109,01/08/11 18:49,,,NO
-24,Complaints related to property tax ,T.Nagar,T.Nagar,North Ushman Road,N10,N131,01-15-2011 05:49:43,,,NO
-25,Complaints related to issue of all types of license ,Tondiarpet,Tondiarpet,Rathina Sabapathi Street,N04,N042,01-26-2011 17:51:20,,,NO
-26,Obstruction of Trees,Nungambakkam,Nungambakkam,Sivaganga Road,N09,N110,02-13-2011 17:47:11,,,NO
-27,Building plan sanction,Nungambakkam,Nungambakkam,New Street,N09,N109,02-24-2011 03:12:06,,,NO
-28,Complaints related to property tax ,Greater Chennai Corporation,Thiruvanmiyur,Valimki Nagar,N13,N171,03/01/11 10:20,,,NO
-29,Building plan sanction,Nungambakkam,Nungambakkam,New Street,N09,N109,03/03/11 08:08,,,NO
-30,Desilting of Canal,Choolaimedu,Choolaimedu,Atherayapuram Main Road,N09,N109,03/04/11 13:44,,,NO
-31,Request to relay the Road,Velachery,Bhuvaneshawari Nagar,Bhuvaneshawari Nagar 1st Main Road,N13,N179,03/09/11 11:37,,,NO
-32,Unauthorised / Illegal construction,Kolathur,Thirupathi Nagar,Thirupathi Nagar 4th Main Road,N06,N064,03/09/11 19:54,,,NO
-33,Issue of Voter ID,Adyar,K.B.Nagar,Kasthuribai Nagar 7th Main Road,N13,N175,04/04/11 17:23,,,NO
-34,Unauthorised / Illegal construction,Choolaimedu,Thiruvalluvarpuram,Thiruvallivarpuram 1 St Street,N09,N109,06/10/11 13:47,,,NO
-35,Complaints related to issue of all types of license ,Vepery,Periamet,Thriuvengadam Street,N05,N058,06-24-2011 15:31:21,,,NO
-36,Stagnation of water,Adampakkam,Adampakkam,Maduvankarai Road,N12,N164,08/12/11 09:36,,,NO
-37,Unauthorised / Illegal construction,Villivakkam,Highcourt Colony,High Court Colony 2nd Street,N08,N097,09/02/11 12:57,,,NO
-38,Unauthorised / Illegal construction,Villivakkam,Highcourt Colony,High Court Colony 1st Street,N08,N095,09/02/11 13:01,,,NO
-39,Request to relay the Road,Sowcarpet,Kothaval Chavadi,Audiyappa (Naicken) Street,N05,N057,09/02/11 22:42,,,NO
-40,Public Health/Dengue/Malaria/Gastro-enteritis,T.Nagar,T.Nagar,Govindhu Street,N10,N136,09/08/11 15:08,,,NO
-41,Parking Issue,Greater Chennai Corporation,Virugambakkam,Virugambakkam,N10,N127,09-20-2011 14:23:47,,,NO
-42,Complaints regarding Bridges/Flyovers/Subways,Guindy,Rajbhavan,Sardar Patel Road,N13,N171,10/12/11 12:02,,,NO
-43,Formation of New Road,Virugambakkam,Virugambakkam,Arcot Road,N11,N152,10-14-2011 10:44:27,,,NO
-44,Formation of New Road,Virugambakkam,Virugambakkam,Arcot Road,N11,N152,10-14-2011 10:49:14,,,NO
-45,Obstruction of Trees,Greater Chennai Corporation,Basin Bridge,Basin Bridge,N06,N072,10-19-2011 16:25:13,,,NO
-46,Repairs to the SWD,Tondiarpet,Thiruvalluvar Nagar,Housing Board Quarters,N04,N040,10-31-2011 16:09:48,,,NO
-47,Stagnation of water,Adampakkam,Adampakkam,Maduvankarai Road,N12,N164,10-31-2011 18:36:32,,,NO
-48,Removal of garbage,Greater Chennai Corporation,Saidapet,Saidapet,N10,N142,11/09/11 15:38,,,NO
-49,Complaints related to property tax ,Kodambakkam,Rangarajapuram,Vathiyar Thottam Main Road,N10,N134,11/10/11 11:45,,,NO
-50,Removal of shops in the footpath,Saligramam,Puspa Colony,Pushpa Colony,N10,N129,11/12/11 17:43,,,NO
+2,Request to relay the Road,Central,Central,V P Hall Compounds,N05,N059,08-06-2010 14:54:56,,,NO
+3,Encroachment on the public property,Anna Nagar,Y Block,Y Block 3rd Street,N08,N100,10-06-2010 10:29:47,,,NO
+4,Request to relay the Road,Jafferkhanpet,Jafferkhanpet,S.V.Chidambaram Salai,N10,N139,10-07-2010 14:43:37,,,NO
+5,Complaints regarding Centre Median,Virugambakkam,Alwarthirunagar Annexe,School View Street 2 - Alwarthirunagar Annexe,N11,N149,10-18-2010 17:07:05,,,NO

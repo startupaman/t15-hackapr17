@@ -8,6 +8,11 @@ import chartjs from 'angular-chart.js';
 import {
     Meteor
 } from 'meteor/meteor';
+import {
+    Types
+} from '../../../../api/types';
+
+
 
 class CaseOne {
     constructor($scope, $rootScope, $reactive, $timeout, $q) {
@@ -19,12 +24,42 @@ class CaseOne {
         this.q = $q;
         this.scope = $scope;
 
-        this.helpers({});
-    }
+        this.selectedType = "";
 
-    startProcessing() {
-        console.log(Session.get("selectedValue"));
-        Meteor.call("insertMaster");
+        $timeout(function() {
+            $scope.labels = ["0", "1", "2", "3", "4", "5", "6", "7", "8"];
+            $scope.series = ['Series A'];
+            // $scope.data = [
+            //     [65, 59, 80, 81, 56, 55, 40, 100, 20]
+            // ];
+        });
+
+        Session.set("type", "");
+
+        $scope.types = []
+
+        this.helpers({
+            getAllComplaintsType() {
+                $scope.types = Types.find().fetch()
+            },
+            chartData() {
+                var selectedType = Session.get("type");
+
+                var type = Types.findOne({
+                    name: selectedType
+                });
+
+                if (type) {
+                    return type.guidanceArray;
+                }
+            }
+        });
+
+        $scope.setValue = function(object) {
+            Session.set("type", object.name);
+            console.log(object._id);
+            console.log(object.name);
+        }
     }
 }
 
